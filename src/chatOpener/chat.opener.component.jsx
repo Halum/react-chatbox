@@ -11,7 +11,7 @@ const ChatOpener = props => {
         setDisplay(display === 'block' ? 'none' : 'block');
         props.onOpen && props.onOpen();
       }}>
-      {props.children || "Chat"}
+        <div className='chat-open-title'>{props.children || "Chat"}</div>
     </button>
   );
 };
