@@ -1,0 +1,18 @@
+.chat-open {
+  display: block;
+  background-color: #F5F6F7;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px;
+  direction: ltr;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  width: 300px;
+}

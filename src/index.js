@@ -1,9 +1,11 @@
 import React from "react";
 import './style.css';
 
-const ChatBox = () => {
+import ChatOpener from './chatOpener/chat.opener.component';
+
+const ChatBox = props => {
   return (
-    <h1>Chatbox</h1>
+    <ChatOpener>{props.title}</ChatOpener>
   );
 }
 
