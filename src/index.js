@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import './style.css';
 
-const ChatBox = () => {
+import ChatOpener from './chatOpener/chat.opener.component';
+import ChatWindow from './chatWindow/chat.window.component';
+
+const ChatBox = props => {
+  const [isOpen, updateChatWindowFlag] = useState(false);
+
+  const openChat = updateChatWindowFlag.bind(this, true);
+  const closeChat = updateChatWindowFlag.bind(this, false);
+
   return (
-    <h1>Chatbox</h1>
+    <>
+      <ChatWindow show={isOpen} title={props.title} onClose={closeChat} />
+      <ChatOpener show={!isOpen} title={props.title} onOpen={openChat} />
+    </>
   );
 }
 

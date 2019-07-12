@@ -3,7 +3,7 @@ import { render} from 'react-dom';
 import ChatBox from '../../src';
 
 const App = () => (
-    <ChatBox />
+    <ChatBox title="Group Chat"/>
 );
 
 render(<App />, document.getElementById("root"));
