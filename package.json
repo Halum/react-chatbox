@@ -4,7 +4,7 @@
   "description": "A simple popup chatbox to use in any react app.",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
