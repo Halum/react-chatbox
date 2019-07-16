@@ -1,0 +1,16 @@
+@import './../style.scss';
+
+.chat-open {
+  @extend .dimention, .defaults, .chat-header;
+  display: block;
+  text-align: left;
+  line-height: 16px;
+  direction: ltr;
+  border: none;
+  position: fixed;
+  min-height: 50px;
+}
+
+.chat-open-title {
+  @extend .chat-header-title;
+}

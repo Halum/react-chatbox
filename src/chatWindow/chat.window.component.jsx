@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './chat.window.style.css';
+import './chat.window.style.scss';
 import Header from './../header/header.component';
 
 const ChatWindow = props => {

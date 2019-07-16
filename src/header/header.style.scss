@@ -1,0 +1,11 @@
+@import './../style.scss';
+
+.header {
+  @extend .defaults, .chat-header;
+  min-height: 50px;
+  position: relative;
+}
+
+.header-title {
+  @extend .chat-header-title;
+}

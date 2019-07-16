@@ -1,5 +1,5 @@
 import React from 'react';
-import './chat.opener.style.css';
+import './chat.opener.style.scss';
 
 const ChatOpener = props => {
 
