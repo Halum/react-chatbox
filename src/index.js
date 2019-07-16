@@ -5,8 +5,8 @@ import ChatWindow from './chatWindow/chat.window.component';
 const ChatBox = props => {
   const [isOpen, updateChatWindowFlag] = useState(false);
 
-  const openChat = updateChatWindowFlag.bind(this, true);
-  const closeChat = updateChatWindowFlag.bind(this, false);
+  const openChat = () => updateChatWindowFlag(true);
+  const closeChat = () => updateChatWindowFlag(false);
 
   return (
     <>
